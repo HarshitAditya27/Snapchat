@@ -14,7 +14,10 @@ import TimerIcon from '@material-ui/icons/Timer'
 import SendIcon from '@material-ui/icons/Send'
 import { v4 as uuid } from "uuid";
 import { db, storage } from "./firebase";
-import firebase from "firebase";
+//import firebase from "firebase"; 
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth'
+import 'firebase/compat/firestore'
 function Preview() {
     const cameraImage = useSelector(selectCameraImage)
     const navigate = useNavigate();
@@ -63,7 +66,7 @@ function Preview() {
             <img src={cameraImage} alt="" />
             <div onClick={sendPost} className="preview_footer">
                 <h2>Send Now</h2>
-                <SendIcon fontSize="small" classname="preview_SendIcon" />
+                <SendIcon fontSize="small" className="preview_SendIcon" />
             </div>
         </div>
     );
