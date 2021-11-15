@@ -1,15 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+  user: null,
+  selectedImage: null
+};
+
 export const appSlice = createSlice({
   name: 'app',
-  initialState: {
-    user: null,
-    selectedImage: null
-  },
+  initialState,
   reducers: {
     login: (state, action) => {
       state.user = action.payload;
     },
-    logout: (state) => {
+    logout: (state, action) => {
       state.user = null;
     },
     selectImage: (state, action) => {

@@ -1,7 +1,7 @@
 .chat {
     display: flex; 
     align-items: center; 
-    justify-content: center; 
+    justify-content: space-between; 
     padding: 8px; 
     border-bottom: 1px solid whitesmoke; 
     cursor: pointer;
@@ -25,11 +25,11 @@
     flex: 1;
 } 
 
-.chat_info >h4 {
+.chat_info > h4 {
     font-size: 11px; 
     font-weight: 500;
 } 
 
-.chat_info >p {
+.chat_info > p {
     font-size: 9px; 
 }

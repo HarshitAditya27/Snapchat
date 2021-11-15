@@ -18,13 +18,16 @@ import { db, storage } from "./firebase";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth'
 import 'firebase/compat/firestore'
+import { selectUser } from './features/appSlice'
+
 function Preview() {
-    const cameraImage = useSelector(selectCameraImage)
+    const cameraImage = useSelector(selectCameraImage);
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    const user = useSelector(selectUser)
     useEffect(() => {
         if (!cameraImage) {
-            navigate('/')
+            navigate('/', { replace: true });
         }
     }, [cameraImage, navigate])
 
@@ -42,11 +45,12 @@ function Preview() {
             storage.ref('posts').child(id).getDownloadURL().then((url) => {
                 db.collection('posts').add({
                     imageUrl: url,
-                    username: 'Harshit',
+                    username: user.username,
                     read: false,
+                    profilePic: user.profilePic,
                     timestamp: firebase.firestore.FieldValue.serverTimestamp(),
                 });
-                navigate('/chats');
+                navigate('/chats', { replace: true });
             });
         });
     };
@@ -63,10 +67,10 @@ function Preview() {
                 <CropIcon />
                 <TimerIcon />
             </div>
-            <img src={cameraImage} alt="" />
+            <img src={cameraImage} alt="" className="preiew_image" />
             <div onClick={sendPost} className="preview_footer">
                 <h2>Send Now</h2>
-                <SendIcon fontSize="small" className="preview_SendIcon" />
+                <SendIcon fontSize="small" className="preview_sendIcon" />
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 import { Avatar } from '@material-ui/core'
-import { StopRoundedIcon } from '@material-ui/icons/StopRounded'
+import StopRoundedIcon from '@material-ui/icons/StopRounded'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router'
@@ -25,10 +25,10 @@ function Chat({ id, username, timestamp, read, imageUrl, profilePic }) {
 
     return (
         <div onClick={open} className="chat">
-            <Avatar src={profilePic} />
+            <Avatar src={profilePic} className="chat_avatar" />
             <div className="chat_info">
                 <h4>{username}</h4>
-                <p>Tap to View - <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()} /> </p>
+                <p> {!read && 'Tap to View - '}  <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()} /> </p>
             </div>
             {!read && <StopRoundedIcon className="chat_readIcon" />}
         </div>

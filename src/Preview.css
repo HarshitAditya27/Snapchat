@@ -2,6 +2,10 @@
     position: relative;
 } 
 
+.preview_image{
+    cursor: pointer;
+}
+
 .preview_close{
     position: absolute; 
     top: 0; 
