@@ -5,6 +5,15 @@ import 'firebase/compat/firestore'
 import 'firebase/compat/storage'
 import 'firebase/compat/auth'
 
+const firebaseConfig = {
+    apiKey: "PUTYOURAPIKEYHERE",
+    authDomain: "PUTYOURDOMAINHERE",
+    projectId: "PUTYOURPROJECTIDHERE",
+    storageBucket: "PUTYOURSTORAGEBUCKETHERE",
+    messagingSenderId: "PUTYOURMESSAGINGSENDERIDHERE",
+    appId: "PUTYOURAPPIDHERE",
+};
+
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 //const db = firebaseApp.firestore(); 
