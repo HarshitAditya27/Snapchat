@@ -1,44 +1,88 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Snapchat Clone 👻  
 
-## Available Scripts
+Deployed Link: https://snapchat-fe697.web.app/
 
-In the project directory, you can run:
+![Screenshot (1944)](https://user-images.githubusercontent.com/71604531/145611240-9e7df281-6fc0-4055-ae7b-a3fbae9dec9c.png)
 
-### `npm start`
+## Introduction 🐱‍💻
+Created a Snapchat Story feature clone using React. It's function is similar as WhatsApp/Instagram Story feature. I have used redux and Firebase for authentication and hosting. Building this clone was very challenging as Redux and Firebase just got upgraded at the time of bulding this clone. Learned a lot of new Redux syntax while building the clone. 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack used 👨‍💻
+<p align="left"> 
+  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a><a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a><a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>   
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Features 🧰
 
-### `npm test`
+- **Responsive** ✨.
+  
+- **Camera** Functionality 📷. 
+  
+- **Exact Time** Functionality ⌚. 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Storage** using Firebase 🗄️.
 
-### `npm run build`
+## Learnings 📝
+  
+- Learned about Redux latest version and its new syntax.
+  
+- Learned about Firebase and how to use it for hosting and authentication.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Learned about varoiuos packages such as react-webcame, react-timeago and etc which helped me in creating this project.  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Learning **React**.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation 🛠️
+  **Step 1**: Fork the repository. You can fork the repository by clicking on the fork button on the right hand side below the profile.<br> 
+  
+  **Step 2**: Clone your forked repository. Replace yourusername with your GitHub Username. 
+  
+  ```sh
+git clone "https://github.com/yourusername/Snapchat.git"
+``` 
+  **Step 3**: After cloning the repository. Go to the repository. 
+  
+  ```sh
+cd Snapchat
+``` 
+  **Step 4**: Run npm init -y. It will install all the packages and dependencies used in the project. 
+  
+  ```sh
+npm init -y 
+```
+  **Step 5**: Run npm i react-scripts. This will install React Scripts in your local repository. React Scripts are scripts which is used to run react apps.  
+  
+  ```sh
+npm i react-scripts 
+``` 
+  **Step 6**: Run npm start. This will start the project in your local machine 🖥️. 
+  
+  ```sh
 
-### `npm run eject`
+npm start 
+``` 
+  **Step 7**: To run the project in your local machine, you need to go to your local server which is running on port 3000. Go to the browser and paste the link given below 👇: 
+  
+  ```sh
+ http://localhost:3000/
+``` 
+Hurray 🥳, you successfully deployed the project in your local machine 🎉.  
+  <br> 
+  🚨 **Only sign in page will open when you run this app in your local machine because API key for Firebase is hidden**. To access its full funcationality of this app you have to privide an API key which you can get from **Firebase**.
+  
+  
+  ## Screenshots   
+  
+  ![Screenshot (1941)](https://user-images.githubusercontent.com/71604531/145612026-ad4ad00d-f660-46ef-9fc7-dd7623518881.png)
+  ![Screenshot (1943)_LI](https://user-images.githubusercontent.com/71604531/145612285-9ff7a2ed-c8dc-49f6-a6c3-ef0554426e8d.jpg) 
+  ![Screenshot (1944)](https://user-images.githubusercontent.com/71604531/145611240-9e7df281-6fc0-4055-ae7b-a3fbae9dec9c.png) 
+  ![Screenshot (1946)](https://user-images.githubusercontent.com/71604531/145612570-2836d6c4-7853-4fb2-8534-02f9bfcccfb5.png)
+  ![Screenshot (1948)](https://user-images.githubusercontent.com/71604531/145612749-3039abfd-a6ad-428c-833b-43742164b7bc.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ## Loved the project 💖? 
+  
+  If you found the project intresting then please do give this project a star ⭐. 
+  <br> <br> <br>
+   <p align="center" width="100%">
+   Made with 💖 by Harshit Aditya   
+</p>
