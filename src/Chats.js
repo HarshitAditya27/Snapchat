@@ -40,7 +40,7 @@ function Chats() {
     return (
         <div className="chats">
             <div className="chats_header">
-                <Avatar src={user.ProfilePic} onClick={() => { auth.signOut() }}
+                <Avatar src={user.profilePic} onClick={() => { auth.signOut() }}
                     className="chats_avatar" />
                 <div className="chats_search">
                     <SearchIcon className="chats_searchIcon" />
@@ -52,7 +52,7 @@ function Chats() {
                 {posts.map(
                     ({
                         id,
-                        data: { ProfilePic, username, imageUrl, timestamp, read },
+                        data: { profilePic, username, imageUrl, timestamp, read },
 
                     }) => (
                         <Chat
@@ -61,7 +61,7 @@ function Chats() {
                             username={username}
                             timestamp={timestamp}
                             imageUrl={imageUrl}
-                            ProfilePic={ProfilePic}
+                            profilePic={profilePic}
                             read={read}
                         />
                     )

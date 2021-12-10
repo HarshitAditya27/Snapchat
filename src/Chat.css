@@ -8,8 +8,8 @@
 } 
 
 .chat_avatar{
-    height: 35px !important; 
-    width: 35px !important;
+    height: 35px; 
+    width: 35px ;
 } 
 
 .chat:hover {
